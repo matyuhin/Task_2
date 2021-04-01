@@ -33,7 +33,7 @@ def check_brackets(text, opening):
             not_closed = stack[-1]
             if not cl:
                 err = not_closed
-        return print(flag, err, not_closed)
+        return print(f"{flag}, {err}, {not_closed}")
     except KeyError:
         print("Введены неверные символы")
 
